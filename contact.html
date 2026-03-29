@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Kanishk Bhatt</title>
+  <meta name="description" content="Get in touch with Kanishk Bhatt for collaboration and project inquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="spotlight" id="spotlight"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">KB.</a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
+      <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="nav-resume"><i class="fas fa-download"></i> Resume</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="skills.html" class="mobile-link">Skills</a>
+    <a href="education.html" class="mobile-link">Education</a>
+    <a href="experience.html" class="mobile-link">Experience</a>
+    <a href="projects.html" class="mobile-link">Projects</a>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Contact</span>
+        <h1 class="section-title">Let's <span class="gradient-text">Connect</span></h1>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Drop me a message!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Get in Touch 👋</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any channel below.</p>
+          <div class="contact-details">
+            <a href="mailto:work.kanishkb@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>work.kanishkb@gmail.com</span>
+            </a>
+            <a href="tel:+917983224056" class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 7983224056</span>
+            </a>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/kanishk-bhatt" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kanishk-b-389839304/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/kanishk._.bhatt/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div data-aos="fade-left">
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xwvwvwln" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">KB.</a>
+          <p>Machine Learning enthusiast building real-world solutions and beautiful experiences.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="skills.html" class="footer-link">Skills</a>
+            <a href="education.html" class="footer-link">Education</a>
+            <a href="experience.html" class="footer-link">Experience</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-links">
+            <a href="https://github.com/kanishk-bhatt" target="_blank" class="footer-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/kanishk-b-389839304/" target="_blank" class="footer-link">LinkedIn</a>
+            <a href="https://www.instagram.com/kanishk._.bhatt/" target="_blank" class="footer-link">Instagram</a>
+            <a href="mailto:work.kanishkb@gmail.com" class="footer-link">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Kanishk Bhatt. Crafted with ♥ and a lot of ☕
+      </div>
+    </div>
+  </footer>
+
+  <nav class="floating-dock" id="floating-dock">
+    <a href="index.html" class="dock-item"><i class="fas fa-home"></i><span class="dock-tooltip">Home</span></a>
+    <a href="about.html" class="dock-item"><i class="fas fa-user"></i><span class="dock-tooltip">About</span></a>
+    <a href="skills.html" class="dock-item"><i class="fas fa-code"></i><span class="dock-tooltip">Skills</span></a>
+    <a href="education.html" class="dock-item"><i class="fas fa-graduation-cap"></i><span class="dock-tooltip">Education</span></a>
+    <a href="experience.html" class="dock-item"><i class="fas fa-briefcase"></i><span class="dock-tooltip">Experience</span></a>
+    <a href="projects.html" class="dock-item"><i class="fas fa-rocket"></i><span class="dock-tooltip">Projects</span></a>
+    <a href="certifications.html" class="dock-item"><i class="fas fa-certificate"></i><span class="dock-tooltip">Certs</span></a>
+    <a href="contact.html" class="dock-item"><i class="fas fa-envelope"></i><span class="dock-tooltip">Contact</span></a>
+  </nav>
+
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

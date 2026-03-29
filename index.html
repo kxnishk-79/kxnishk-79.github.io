@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanishk Bhatt — Machine Learning Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Kanishk Bhatt — Machine Learning enthusiast, Flutter developer, and full-stack engineer building real-world ML projects.">
+  <meta name="keywords" content="Kanishk Bhatt, Machine Learning, Flutter Developer, Full Stack Developer, Portfolio">
+  <meta name="author" content="Kanishk Bhatt">
+  <meta name="theme-color" content="#060012">
+  <meta property="og:title" content="Kanishk Bhatt — ML Engineer & Developer">
+  <meta property="og:description" content="Machine Learning enthusiast building real-world projects and turning data into actionable insights.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Splash Cursor (WebGL fluid canvas) -->
+  <canvas id="splash-canvas" class="splash-canvas"></canvas>
+
+  <!-- Click Spark Canvas -->
+  <canvas id="click-spark-canvas" class="click-spark-canvas"></canvas>
+
+  <!-- Background -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="spotlight" id="spotlight"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">KB.</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+      <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="nav-resume">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       HERO SECTION
+       ════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="aurora-bg">
+      <div class="aurora-blob aurora-1"></div>
+      <div class="aurora-blob aurora-2"></div>
+      <div class="aurora-blob aurora-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Text Side -->
+      <div class="hero-text">
+        <p class="hero-tagline">// Welcome to my world</p>
+        <h1 class="hero-name">
+          <span class="gradient-text" data-decrypt data-text="Kanishk Bhatt">Kanishk Bhatt</span>
+        </h1>
+        <p class="hero-role">
+          I build <span class="typed-text" id="typed-text">ML Models</span>
+        </p>
+        <p class="hero-desc">
+          Machine Learning enthusiast building real-world ML projects and turning data into actionable insights. Passionate about creating intelligent systems and beautiful user experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+          <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="btn btn-outline">
+            <i class="fas fa-file-alt"></i> View Resume
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/kanishk-bhatt" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/kanishk-b-389839304/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/kanishk._.bhatt/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:work.kanishkb@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Profile Card Side -->
+      <div class="hero-card-side">
+        <div class="profile-card-wrapper">
+          <div class="profile-card-glow"></div>
+          <div class="profile-card">
+            <div class="profile-card-bg"></div>
+            <div class="profile-card-info">
+              <h2 class="profile-card-name gradient-text">Kanishk Bhatt</h2>
+              <p class="profile-card-title">Machine Learning Engineer</p>
+            </div>
+            <img src="kanishk.jpg" alt="Kanishk Bhatt" class="profile-card-photo">
+            <div class="profile-card-bottom">
+              <span class="profile-card-handle">@kanishk.bhatt</span>
+              <span class="profile-card-status">Available</span>
+            </div>
+            <div class="profile-card-shine"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       ABOUT SECTION
+       ════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// About Me</span>
+        <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-side" data-aos="fade-up">
+          <div class="about-image-frame border-glow-card">
+            <img src="kanishk.jpg" alt="Kanishk Bhatt">
+          </div>
+        </div>
+        <div class="about-text-side" data-aos="fade-up" data-aos-delay="100">
+          <h3>I'm Kanishk Bhatt 👋</h3>
+          <p>An IT graduate from M.K. Bhavnagar University with a passion for Machine Learning and Full-Stack Development. I specialize in building intelligent systems that solve real-world problems using data-driven approaches.</p>
+          <p>During my ML internship at Cognifyz Technologies, I worked on regression, classification, and recommendation systems. I love exploring the intersection of AI and software engineering.</p>
+          <p>I also have hands-on retail experience from Reliance Retail, bringing a unique blend of technical skill and real-world business understanding.</p>
+          <div class="about-stats">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+              <div class="stat-number"><span class="ticker" data-target="5">0</span>+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="stat-number"><span class="ticker" data-target="3">0</span>+</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+              <div class="stat-number"><span class="ticker" data-target="10">0</span>+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SKILLS SECTION — Centered, SVG icons
+       ════════════════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// My Skills</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skills-category" data-aos="fade-up">
+          <h3 class="skills-category-title">Machine Learning & Data Science</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fas fa-brain"></i><span>TensorFlow</span></div>
+            <div class="skill-card"><i class="fas fa-cogs"></i><span>Scikit-Learn</span></div>
+            <div class="skill-card"><i class="fas fa-table"></i><span>Pandas</span></div>
+            <div class="skill-card"><i class="fas fa-calculator"></i><span>NumPy</span></div>
+            <div class="skill-card"><i class="fas fa-chart-line"></i><span>Matplotlib</span></div>
+            <div class="skill-card"><i class="fas fa-book-open"></i><span>Jupyter</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-category-title">Frontend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fas fa-mobile-alt"></i><span>Flutter</span></div>
+            <div class="skill-card"><i class="fas fa-bullseye"></i><span>Dart</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skills-category-title">Backend & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fas fa-fire"></i><span>Firebase</span></div>
+            <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="skill-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+            <div class="skill-card"><i class="fas fa-code"></i><span>VS Code</span></div>
+            <div class="skill-card"><i class="fab fa-linux"></i><span>Linux</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="skills-category-title">Soft Skills</h3>
+          <div class="soft-skills">
+            <span class="soft-pill">Problem Solving</span>
+            <span class="soft-pill">Team Collaboration</span>
+            <span class="soft-pill">Communication</span>
+            <span class="soft-pill">Critical Thinking</span>
+            <span class="soft-pill">Adaptability</span>
+            <span class="soft-pill">Time Management</span>
+            <span class="soft-pill">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       EDUCATION SECTION
+       ════════════════════════════════════════ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Education</span>
+        <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2021 — 2024</span>
+            <h3 class="timeline-title">Bachelor of Science in Information Technology</h3>
+            <p class="timeline-subtitle">M.K. Bhavnagar University, Gujarat</p>
+            <ul class="timeline-list">
+              <li>Completed B.Sc. I.T. with focus on Software Engineering & Data Science</li>
+              <li>Specialized in Machine Learning algorithms and data analysis</li>
+              <li>Built multiple full-stack projects using Flutter, Firebase, and Python</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2019 — 2021</span>
+            <h3 class="timeline-title">Higher Secondary Certificate (HSC) — Science</h3>
+            <p class="timeline-subtitle">Gujarat State Board</p>
+            <ul class="timeline-list">
+              <li>Completed HSC with Science stream (Physics, Chemistry, Mathematics)</li>
+              <li>Developed strong analytical and problem-solving foundations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2019</span>
+            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+            <p class="timeline-subtitle">Gujarat State Board</p>
+            <ul class="timeline-list">
+              <li>Completed SSC with distinction in Science and Mathematics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       EXPERIENCE SECTION — Cognifyz + Reliance
+       ════════════════════════════════════════ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Experience</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Cognifyz -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">Feb 2026 — Mar 2026</span>
+            <h3 class="timeline-title">Machine Learning Intern</h3>
+            <p class="timeline-subtitle">Cognifyz Technologies</p>
+            <ul class="timeline-list">
+              <li>Built regression models for salary prediction using Python and Scikit-Learn</li>
+              <li>Developed a restaurant recommendation system using collaborative and content-based filtering</li>
+              <li>Performed EDA and feature engineering on multi-dimensional datasets</li>
+              <li>Implemented classification models for multi-class prediction with comprehensive metrics</li>
+              <li>Created data visualizations and summary statistics for stakeholders</li>
+            </ul>
+            <div class="timeline-links">
+              <a href="https://github.com/kanishk-bhatt/Machine-Learning-Internship-Cognifyz-Technologies" target="_blank" class="btn btn-glow">
+                <i class="fas fa-code"></i> View Project
+              </a>
+              <a href="https://drive.google.com/file/d/1aC0X60rC8nCFFxt_l4vYVhQoQotlT2qd/view?usp=drive_link" target="_blank" class="btn btn-glow">
+                <i class="fas fa-certificate"></i> Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reliance Retail -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2024 — 2025</span>
+            <h3 class="timeline-title">Retail Associate</h3>
+            <p class="timeline-subtitle">Reliance Retail (Trends)</p>
+            <ul class="timeline-list">
+              <li>Managed customer interactions and delivered exceptional service in a fast-paced retail environment</li>
+              <li>Handled inventory management and stock tracking using POS systems</li>
+              <li>Collaborated with team members to meet daily and weekly sales targets</li>
+              <li>Developed strong communication, time management, and problem-solving skills</li>
+              <li>Gained hands-on experience in retail operations, visual merchandising, and customer analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       PROJECTS SECTION
+       ════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Real-world projects showcasing ML, mobile, and full-stack expertise</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- BookFlix -->
+        <div class="border-glow-card" data-aos="fade-up">
+          <div class="card-top-bar"></div>
+          <div class="card-content">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-book-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/kanishk-bhatt/Project-BookFlix" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">BookFlix</h3>
+            <p class="project-desc">A full-featured book discovery and reading companion app built with Flutter and Firebase. Features real-time book search, personalized recommendations, reading progress tracking, and a social reading community.</p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Dart</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Internship -->
+        <div class="border-glow-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-top-bar"></div>
+          <div class="card-content">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-brain"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/kanishk-bhatt/Machine-Learning-Internship-Cognifyz-Technologies" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">ML Internship Tasks</h3>
+            <p class="project-desc">Collection of machine learning projects completed during the Cognifyz Technologies internship. Includes salary prediction, restaurant recommendation, and multi-class classification models.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="border-glow-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-top-bar"></div>
+          <div class="card-content">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-gem"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/kanishk-bhatt/kanishk-bhatt.github.io" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">3D Portfolio Website</h3>
+            <p class="project-desc">This portfolio — a cinematic 3D web experience built with pure HTML, CSS, and JS. Features splash cursor, click sparks, 3D profile card, day/night themes, and 20+ animated components.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">WebGL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CERTIFICATIONS SECTION — with embedded viewer
+       ════════════════════════════════════════ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Certifications</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Credentials</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certs-grid">
+        <a href="https://www.linkedin.com/posts/kanishk-b-389839304_ai-mastermind-masterclass-certificate-activity-7304135629973303297-rHEw" target="_blank" class="cert-card" data-aos="fade-up">
+          <div class="cert-top-bar"></div>
+          <div class="cert-content">
+            <div class="cert-icon">🏆</div>
+            <h3 class="cert-title">AI Mastermind Masterclass</h3>
+            <p class="cert-issuer">Outskill — by Vaibhav Sisinty</p>
+            <p class="cert-desc">Comprehensive AI/ML fundamentals & applications</p>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1aC0X60rC8nCFFxt_l4vYVhQoQotlT2qd/view?usp=drive_link" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-top-bar"></div>
+          <div class="cert-content">
+            <div class="cert-icon">🎓</div>
+            <h3 class="cert-title">Machine Learning Internship</h3>
+            <p class="cert-issuer">Cognifyz Technologies</p>
+            <p class="cert-desc">Feb 2026 — Mar 2026 • ML Intern</p>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-top-bar"></div>
+          <div class="cert-content">
+            <div class="cert-icon">📜</div>
+            <h3 class="cert-title">AI & Machine Learning Foundations</h3>
+            <p class="cert-issuer">Professional Development</p>
+            <p class="cert-desc">ML concepts, data analysis, and AI application development</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Embedded Document Viewer -->
+      <div style="margin-top: 50px;" data-aos="fade-up" data-aos-delay="300">
+        <h3 style="text-align:center; margin-bottom: 20px; color: var(--text-dim); font-size: 0.95rem;">
+          <i class="fas fa-eye" style="color: var(--accent); margin-right: 8px;"></i>Preview Certificate
+        </h3>
+        <div class="doc-viewer border-glow-card">
+          <iframe src="https://drive.google.com/file/d/1aC0X60rC8nCFFxt_l4vYVhQoQotlT2qd/preview" allow="autoplay" loading="lazy"></iframe>
+          <div class="doc-viewer-bar">
+            <span class="doc-viewer-title"><i class="fas fa-certificate" style="color:var(--accent);margin-right:6px;"></i>ML Internship Certificate — Cognifyz Technologies</span>
+            <a href="https://drive.google.com/file/d/1aC0X60rC8nCFFxt_l4vYVhQoQotlT2qd/view?usp=drive_link" target="_blank" class="btn btn-glow" style="padding: 6px 14px; font-size: 0.78rem;">
+              <i class="fas fa-external-link-alt"></i> View Original
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CONTACT SECTION
+       ════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Drop me a message!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info" data-aos="fade-up">
+          <h3>Get in Touch 👋</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div class="contact-details">
+            <a href="mailto:work.kanishkb@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>work.kanishkb@gmail.com</span>
+            </a>
+            <a href="tel:+917983224056" class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 7983224056</span>
+            </a>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/kanishk-bhatt" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kanishk-b-389839304/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/kanishk._.bhatt/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100">
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xwvwvwln" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">KB.</a>
+          <p>Machine Learning enthusiast building real-world solutions and beautiful experiences.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links">
+            <a href="#about" class="footer-link">About</a>
+            <a href="#skills" class="footer-link">Skills</a>
+            <a href="#education" class="footer-link">Education</a>
+            <a href="#experience" class="footer-link">Experience</a>
+            <a href="#projects" class="footer-link">Projects</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-links">
+            <a href="https://github.com/kanishk-bhatt" target="_blank" class="footer-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/kanishk-b-389839304/" target="_blank" class="footer-link">LinkedIn</a>
+            <a href="https://www.instagram.com/kanishk._.bhatt/" target="_blank" class="footer-link">Instagram</a>
+            <a href="mailto:work.kanishkb@gmail.com" class="footer-link">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Kanishk Bhatt. Crafted with ♥ and a lot of ☕
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING DOCK ═══ -->
+  <nav class="floating-dock" id="floating-dock">
+    <a href="#hero" class="dock-item" aria-label="Home">
+      <i class="fas fa-home"></i><span class="dock-tooltip">Home</span>
+    </a>
+    <a href="#about" class="dock-item" aria-label="About">
+      <i class="fas fa-user"></i><span class="dock-tooltip">About</span>
+    </a>
+    <a href="#skills" class="dock-item" aria-label="Skills">
+      <i class="fas fa-code"></i><span class="dock-tooltip">Skills</span>
+    </a>
+    <a href="#education" class="dock-item" aria-label="Education">
+      <i class="fas fa-graduation-cap"></i><span class="dock-tooltip">Education</span>
+    </a>
+    <a href="#experience" class="dock-item" aria-label="Experience">
+      <i class="fas fa-briefcase"></i><span class="dock-tooltip">Experience</span>
+    </a>
+    <a href="#projects" class="dock-item" aria-label="Projects">
+      <i class="fas fa-rocket"></i><span class="dock-tooltip">Projects</span>
+    </a>
+    <a href="#certifications" class="dock-item" aria-label="Certs">
+      <i class="fas fa-certificate"></i><span class="dock-tooltip">Certs</span>
+    </a>
+    <a href="#contact" class="dock-item" aria-label="Contact">
+      <i class="fas fa-envelope"></i><span class="dock-tooltip">Contact</span>
+    </a>
+  </nav>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JS -->
+  <script src="js/particles.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/profile-card.js"></script>
+</body>
+</html>

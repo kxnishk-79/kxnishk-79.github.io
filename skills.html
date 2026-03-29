@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — Kanishk Bhatt</title>
+  <meta name="description" content="Technical skills and technologies used by Kanishk Bhatt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="spotlight" id="spotlight"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">KB.</a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+      </button>
+      <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="nav-resume">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="education.html" class="mobile-link">Education</a>
+    <a href="experience.html" class="mobile-link">Experience</a>
+    <a href="projects.html" class="mobile-link">Projects</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// My Skills</span>
+        <h1 class="section-title">Tech <span class="gradient-text">Stack</span></h1>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- ML & Data Science -->
+        <div class="skills-category" data-aos="fade-up">
+          <h3 class="skills-category-title">Machine Learning & Data Science</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-python-plain"></i><span>Python</span></div>
+            <div class="skill-card"><i class="devicon-tensorflow-original"></i><span>TensorFlow</span></div>
+            <div class="skill-card"><i class="devicon-scikitlearn-plain"></i><span>Scikit-Learn</span></div>
+            <div class="skill-card"><i class="devicon-pandas-plain"></i><span>Pandas</span></div>
+            <div class="skill-card"><i class="devicon-numpy-plain"></i><span>NumPy</span></div>
+            <div class="skill-card"><i class="devicon-matplotlib-plain"></i><span>Matplotlib</span></div>
+            <div class="skill-card"><i class="devicon-jupyter-plain"></i><span>Jupyter</span></div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-category-title">Frontend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
+            <div class="skill-card"><i class="devicon-dart-plain"></i><span>Dart</span></div>
+          </div>
+        </div>
+
+        <!-- Backend & Tools -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skills-category-title">Backend & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-firebase-plain"></i><span>Firebase</span></div>
+            <div class="skill-card"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+            <div class="skill-card"><i class="devicon-git-plain"></i><span>Git</span></div>
+            <div class="skill-card"><i class="devicon-github-original"></i><span>GitHub</span></div>
+            <div class="skill-card"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+            <div class="skill-card"><i class="devicon-linux-plain"></i><span>Linux</span></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="skills-category-title">Soft Skills</h3>
+          <div class="soft-skills">
+            <span class="soft-pill">Problem Solving</span>
+            <span class="soft-pill">Team Collaboration</span>
+            <span class="soft-pill">Communication</span>
+            <span class="soft-pill">Critical Thinking</span>
+            <span class="soft-pill">Adaptability</span>
+            <span class="soft-pill">Time Management</span>
+            <span class="soft-pill">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container"><div class="footer-bottom">© 2026 Kanishk Bhatt. Crafted with ♥ and a lot of ☕</div></div>
+  </footer>
+
+  <nav class="floating-dock" id="floating-dock">
+    <a href="index.html" class="dock-item"><i class="fas fa-home"></i><span class="dock-tooltip">Home</span></a>
+    <a href="about.html" class="dock-item"><i class="fas fa-user"></i><span class="dock-tooltip">About</span></a>
+    <a href="skills.html" class="dock-item"><i class="fas fa-code"></i><span class="dock-tooltip">Skills</span></a>
+    <a href="education.html" class="dock-item"><i class="fas fa-graduation-cap"></i><span class="dock-tooltip">Education</span></a>
+    <a href="experience.html" class="dock-item"><i class="fas fa-briefcase"></i><span class="dock-tooltip">Experience</span></a>
+    <a href="projects.html" class="dock-item"><i class="fas fa-rocket"></i><span class="dock-tooltip">Projects</span></a>
+    <a href="certifications.html" class="dock-item"><i class="fas fa-certificate"></i><span class="dock-tooltip">Certs</span></a>
+    <a href="contact.html" class="dock-item"><i class="fas fa-envelope"></i><span class="dock-tooltip">Contact</span></a>
+  </nav>
+
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

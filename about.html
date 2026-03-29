@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Kanishk Bhatt</title>
+  <meta name="description" content="Learn about Kanishk Bhatt — IT graduate, ML engineer, and full-stack developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="spotlight" id="spotlight"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">KB.</a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+      </button>
+      <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="nav-resume">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="skills.html" class="mobile-link">Skills</a>
+    <a href="education.html" class="mobile-link">Education</a>
+    <a href="experience.html" class="mobile-link">Experience</a>
+    <a href="projects.html" class="mobile-link">Projects</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══ ABOUT SECTION ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// About Me</span>
+        <h1 class="section-title">Who I <span class="gradient-text">Am</span></h1>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-side" data-aos="fade-right">
+          <div class="about-image-frame glow-card">
+            <img src="kanishk.jpg" alt="Kanishk Bhatt">
+          </div>
+        </div>
+        <div class="about-text-side" data-aos="fade-left">
+          <h3>I'm Kanishk Bhatt 👋</h3>
+          <p>An IT graduate from M.K. Bhavnagar University with a passion for Machine Learning and Full-Stack Development. I specialize in building intelligent systems that solve real-world problems using data-driven approaches.</p>
+          <p>During my ML internship at Cognifyz Technologies, I worked on regression, classification, and recommendation systems. I love exploring the intersection of AI and software engineering, crafting solutions that are both intelligent and beautifully designed.</p>
+          <p>When I'm not coding, I study emerging trends in AI, contribute to open-source projects, and continuously sharpen my skills across the tech stack.</p>
+
+          <div class="about-stats">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+              <div class="stat-number"><span class="ticker" data-target="5">0</span>+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+              <div class="stat-number"><span class="ticker" data-target="3">0</span>+</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="stat-number"><span class="ticker" data-target="10">0</span>+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        © 2026 Kanishk Bhatt. Crafted with ♥ and a lot of ☕
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dock -->
+  <nav class="floating-dock" id="floating-dock">
+    <a href="index.html" class="dock-item"><i class="fas fa-home"></i><span class="dock-tooltip">Home</span></a>
+    <a href="about.html" class="dock-item"><i class="fas fa-user"></i><span class="dock-tooltip">About</span></a>
+    <a href="skills.html" class="dock-item"><i class="fas fa-code"></i><span class="dock-tooltip">Skills</span></a>
+    <a href="education.html" class="dock-item"><i class="fas fa-graduation-cap"></i><span class="dock-tooltip">Education</span></a>
+    <a href="experience.html" class="dock-item"><i class="fas fa-briefcase"></i><span class="dock-tooltip">Experience</span></a>
+    <a href="projects.html" class="dock-item"><i class="fas fa-rocket"></i><span class="dock-tooltip">Projects</span></a>
+    <a href="certifications.html" class="dock-item"><i class="fas fa-certificate"></i><span class="dock-tooltip">Certs</span></a>
+    <a href="contact.html" class="dock-item"><i class="fas fa-envelope"></i><span class="dock-tooltip">Contact</span></a>
+  </nav>
+
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

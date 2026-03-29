@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Kanishk Bhatt</title>
+  <meta name="description" content="Featured projects by Kanishk Bhatt — ML, Flutter, and full-stack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="spotlight" id="spotlight"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">KB.</a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
+      <a href="https://drive.google.com/file/d/1rXUHfnFI5DVr0OyHvB_hh_gQTqbGyfUO/view?usp=drive_link" target="_blank" class="nav-resume"><i class="fas fa-download"></i> Resume</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="skills.html" class="mobile-link">Skills</a>
+    <a href="education.html" class="mobile-link">Education</a>
+    <a href="experience.html" class="mobile-link">Experience</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// Projects</span>
+        <h1 class="section-title">Featured <span class="gradient-text">Work</span></h1>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Real-world projects showcasing ML, mobile, and full-stack expertise</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- BookFlix -->
+        <div class="tilt-card" data-aos="fade-up">
+          <div class="card-glow"></div>
+          <div class="card-top-bar"></div>
+          <div class="card-content">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-book-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/kanishk-bhatt/Project-BookFlix" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">BookFlix</h3>
+            <p class="project-desc">A full-featured book discovery and reading companion app built with Flutter and Firebase. Features real-time book search, personalized recommendations, reading progress tracking, and a social reading community.</p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Dart</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Internship -->
+        <div class="tilt-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-glow"></div>
+          <div class="card-top-bar"></div>
+          <div class="card-content">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-brain"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/kanishk-bhatt/Machine-Learning-Internship-Cognifyz-Technologies" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">ML Internship Tasks</h3>
+            <p class="project-desc">Collection of machine learning projects completed during the Cognifyz Technologies internship. Includes salary prediction, restaurant recommendation, and multi-class classification models.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="tilt-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-glow"></div>
+          <div class="card-top-bar"></div>
+          <div class="card-content">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-gem"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/kanishk-bhatt/kanishk-bhatt.github.io" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">3D Portfolio Website</h3>
+            <p class="project-desc">This portfolio itself — a premium, cinematic 3D web experience built with pure HTML, CSS, and JavaScript. Features aurora backgrounds, particle systems, 3D card effects, day/night themes, and 20+ animated components.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">3D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container"><div class="footer-bottom">© 2026 Kanishk Bhatt. Crafted with ♥ and a lot of ☕</div></div>
+  </footer>
+
+  <nav class="floating-dock" id="floating-dock">
+    <a href="index.html" class="dock-item"><i class="fas fa-home"></i><span class="dock-tooltip">Home</span></a>
+    <a href="about.html" class="dock-item"><i class="fas fa-user"></i><span class="dock-tooltip">About</span></a>
+    <a href="skills.html" class="dock-item"><i class="fas fa-code"></i><span class="dock-tooltip">Skills</span></a>
+    <a href="education.html" class="dock-item"><i class="fas fa-graduation-cap"></i><span class="dock-tooltip">Education</span></a>
+    <a href="experience.html" class="dock-item"><i class="fas fa-briefcase"></i><span class="dock-tooltip">Experience</span></a>
+    <a href="projects.html" class="dock-item"><i class="fas fa-rocket"></i><span class="dock-tooltip">Projects</span></a>
+    <a href="certifications.html" class="dock-item"><i class="fas fa-certificate"></i><span class="dock-tooltip">Certs</span></a>
+    <a href="contact.html" class="dock-item"><i class="fas fa-envelope"></i><span class="dock-tooltip">Contact</span></a>
+  </nav>
+
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
